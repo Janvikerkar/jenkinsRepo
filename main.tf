@@ -1,8 +1,10 @@
 terraform {
 required_providers {
 snowflake = {
-source = "chanzuckerberg/snowflake"
-version = "0.25.16"
+  username = "mylo"
+  account  = "IX85299"
+  region   = "ap-southeast-1"
+  password = "Mylo@123"
 }
 }
 }
