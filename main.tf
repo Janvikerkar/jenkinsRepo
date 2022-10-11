@@ -1,15 +1,17 @@
 terraform {
 required_providers {
 snowflake = {
-  username = "mylo"
-  account  = "IX85299"
-  region   = "ap-southeast-1"
-  password = "Mylo@123"
+source = "chanzuckerberg/snowflake"
+version = "0.25.16"
 }
 }
 }
 provider "snowflake" {
-role = "TF_ROLE"
+role = "acocuntadmin"
+username = "mylo"
+account  = "IX85299"
+region   = "ap-southeast-1"
+password = "Mylo@123"
 }
 resource "snowflake_database" "dbt_ord_dev" {
 name = "DBT_ORD_DEV"
