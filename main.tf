@@ -7,7 +7,7 @@ version = "0.25.16"
 }
 }
 provider "snowflake" {
-role = "acocuntadmin"
+role = "public"
 username = "mylo"
 account  = "IX85299"
 region   = "ap-southeast-1"
